@@ -1,0 +1,11 @@
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .hamburger {
+        display: none;
+    }
+    nav {
+        padding: 16px 20px;
+    }
+    nav h2 {
+        font-size: 1.5em;
+    }
+}
