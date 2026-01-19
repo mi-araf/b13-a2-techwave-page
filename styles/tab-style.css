@@ -26,4 +26,36 @@
         flex-wrap: wrap;
     }
 
+    .techwave-contents {
+        width: 90%;
+        padding-top: 40px;
+    }
+    .techwave-contents h1 {
+        text-align: center;
+        font-size: 2.25rem;
+        margin-bottom: 20px;
+    }
+    .grid-container {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .grid-card h6 {
+        font-size: 22px;
+    }
+    .a {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .b, .c, .d, .e {
+        grid-column: span 1;
+        height: auto;
+    }
+    .grid-card:hover {
+        transform: translateY(-8px);
+    }
+
+
 }

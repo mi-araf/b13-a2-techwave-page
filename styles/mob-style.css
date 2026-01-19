@@ -113,5 +113,32 @@
         font-size: 14px;
     }
 
+    .techwave-contents {
+        width: 100%;
+        padding-top: 40px;
+    }
+    .techwave-contents h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 16px;
+        line-height: 38px;
+    }
+    .grid-container {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 17px;
+    }
+    .grid-card h6 {
+        font-size: 22px;
+    }
+    .d, .e {
+        height: auto;
+    }
+    .grid-card:hover {
+        transform: translateY(-5px);
+    }
+
 
 }
