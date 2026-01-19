@@ -15,6 +15,7 @@
         display: block;
     }
     nav div {
+        z-index: 9999;
         position: absolute;
         top: 3.8rem;
         left: 0;
@@ -31,7 +32,48 @@
     nav:focus-within div {
         display: block;     /* this will now open on click */
     }
+    .hamburger {
+        transition: transform 0.3s ease-in-out;
+    }
+    nav:focus-within .hamburger {
+        transform: rotate(90deg);
+    }
     #btn-hide {
         display: block;
     }
+
+    .banner {
+        height: 430px;
+    }
+    .mic {
+        transform: translate(-48%, -124%);
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+    .banner h6 {
+        width: 70px;
+        height: 35px;
+        top: 16%;
+        left: 56%;
+        padding: 5px 15px;
+    }
+    .hero-circle {
+        width: 200px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .banner-contents {
+        top: 40%;
+    }
+    .banner-contents h1 {
+        font-size: 2.3rem;
+    }
+    .banner-contents p {
+        text-align: center;
+        opacity: 0.8;
+        line-height: 19px;
+    }
+
+
 }
