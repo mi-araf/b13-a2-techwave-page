@@ -57,7 +57,7 @@
         transform: translateY(-8px);
     }
 
-    #episodes {
+    #episodes, #host {
         width: 85%;
         margin: 60px auto;
     }
@@ -75,6 +75,25 @@
     }
     .episode-card-content p {
         padding: 12px 0;
+    }
+
+    .host-contents {
+        flex-direction: column;
+        padding: 32px;
+    }
+    .host-banner {
+        text-align: center;
+        width: 100%;
+    }
+    .host-banner h4 {
+        font-size: 2rem;
+    }
+    .host-image img {
+        width: 170px;
+        height: 170px;
+    }
+    .host-links {
+        justify-content: center;
     }
 
 

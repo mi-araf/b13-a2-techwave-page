@@ -91,7 +91,7 @@
         font-size: 32px;
         margin-bottom: 16px;
     }
-    .about-content p, #episodes p, #host p {
+    .about-content p, #episodes p {
         width: 95%;
         line-height: 1.3;
     }
@@ -142,7 +142,7 @@
     }
 
 
-    #episodes {
+    #episodes, #host {
         width: 91%;
         margin: 40px auto 60px;
     }
@@ -150,6 +150,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .episode-card {
+        width: 100%;
+    }
+    .episode-card iframe {
+        width: 100%;
     }
     .episode-card-content {
         padding: 16px;
@@ -159,6 +165,26 @@
     }
     .episode-card-content p {
         padding: 8px 0;
+    }
+
+
+    .host-contents {
+        flex-direction: column;
+        padding: 24px;
+    }
+    .host-banner {
+        text-align: center;
+        width: 100%;
+    }
+    .host-banner h4 {
+        font-size: 24px;
+    }
+    .host-image img {
+        width: 150px;
+        height: 150px;
+    }
+    .host-links {
+        justify-content: center;
     }
 
 }
