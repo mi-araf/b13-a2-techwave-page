@@ -12,7 +12,7 @@
     #about, .about-content p {
         width: 90%;
     }
-    .about-content h2 {
+    .about-content h2, #episodes h2, #host h2 {
         font-size: 40px;
         margin-bottom: 16px;
     }
@@ -55,6 +55,26 @@
     }
     .grid-card:hover {
         transform: translateY(-8px);
+    }
+
+    #episodes {
+        width: 85%;
+        margin: 60px auto;
+    }
+    .episode-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .episode-card-content {
+        padding: 20px;
+    }
+    .episode-card-content h6 {
+        font-size: 24px;
+    }
+    .episode-card-content p {
+        padding: 12px 0;
     }
 
 

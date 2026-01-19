@@ -40,6 +40,13 @@ nav button:hover {
     transform: translateX(-2px);
 }
 
+/* titles */
+.about-content h2, #episodes h2, #host h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
 
 /* header */
 header {
@@ -141,10 +148,6 @@ nav div div ul li {
 .about-content {
     color: #ffffff;
 }
-.about-content h2 {
-    font-size: 48px;
-    font-weight: bold;
-}
 .about-content p {
     width: 70%;
     margin: 0 auto;
@@ -211,20 +214,16 @@ nav div div ul li {
 }
 .b {    
     grid-column: span 2;
-    grid-template-rows: span 1;
 }
 .c {
     grid-column: span 2;
-    grid-template-rows: span 1;
 }
 .d {
     grid-column: span 2;
-    grid-template-rows: span 1;
     height: 273px;
 }
 .e {
     grid-column: span 1;
-    grid-template-rows: span 1;
     height: 273px;
 }
 
@@ -257,14 +256,61 @@ nav div div ul li {
     opacity: 0.5;
 }
 
-.grid-card h6 {
+/* shared alsoo */
+.grid-card h6, .episode-card h6 {
     color: #ffffff;
     font-size: 24px;
     font-weight: bold;
 }
-.grid-card p {
+.grid-card p, .episode-card p {
     color: #ffffff;
     font-size: 16px;
     line-height: 24px;
     opacity: 0.6;
+}
+
+
+/* Featured Episodes */
+#episodes {
+    width: 77%;
+    margin: 120px auto 60px;
+}
+#episodes h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.episode-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.episode-card {
+    width: 380px;
+    /* height: 440px; */
+    background-color: #250D44;
+    border-radius: 24px;
+}
+.episode-card iframe {
+    border-radius: 24px 24px 0 0;
+}
+.episode-card-content{
+    padding: 24px;
+}
+.episode-card-content h5 {
+    color: #00FF88;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+
+    /* align the time */
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.episode-card-content p {
+    padding: 12px 0;
+}
+.episode-card h5 img {
+    width: 17px;
+    height: 17px;
 }
