@@ -75,6 +75,7 @@ nav div div ul li {
     opacity: 0.;
 }
 .hamburger {
+    cursor: pointer;
     display: none;
 }
 #btn-hide {
@@ -84,7 +85,7 @@ nav div div ul li {
 
 /* main - banner */
 .banner {
-    background: url("./hero-bg.png");
+    background: url("./images/hero-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -374,8 +375,8 @@ nav div div ul li {
     border: 1px solid #412567;
     transition: transform 0.27s ease-in-out;
 }
-.link:hover {
-    transform: translateY(-4px);
+.link:hover, .foot-link:hover {
+    transform: translateY(-4px);    /* also footer's link */
 }
 /* aligning the link-btns */
 .link img {
@@ -391,7 +392,7 @@ nav div div ul li {
 
 /* footer */
 footer {
-    background: url("./footer-bg.png");
+    background: url("./images/footer-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -415,6 +416,7 @@ footer {
     font-weight: bold;
 }
 .foot-link {
+    transition: transform 0.27s ease-in-out;
     align-items: center;
 }
 .foot-link span {
