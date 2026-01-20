@@ -80,7 +80,7 @@ nav div div ul li {
 
 /* main - banner */
 .banner {
-    background-image: url("/assets/hero-bg.png");
+    background: url("./hero-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -377,7 +377,7 @@ nav div div ul li {
 
 /* footer */
 footer {
-    background-image: url("./assets/footer-bg.png");
+    background: url("./footer-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
