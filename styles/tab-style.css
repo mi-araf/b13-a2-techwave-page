@@ -96,5 +96,23 @@
         justify-content: center;
     }
 
+        /* footer */
+    footer {
+        min-height: 100%;
+        background-size: 160% 176%;
+    }
+    .footer-contents {
+        padding: 42px 4px;
+    }
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px 0 28px 0;
+        gap: 16px;
+    }
+    .footer-contents h2 {
+        font-size: 3.25rem;
+    }
+
 
 }

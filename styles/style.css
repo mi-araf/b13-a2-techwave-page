@@ -49,10 +49,9 @@ nav button:hover {
 
 
 /* header */
-header {
+header, footer {
     color: #ffffff;
 }
-
 nav {
     padding: 16px 200px 16px 200px;
     border-bottom: 1px solid rgba(65, 37, 103, 1);
@@ -62,8 +61,9 @@ nav h2 {
     font-size: 2rem;
     font-weight: bolder;
 }
-nav h2 span {
-    background-image: linear-gradient(17deg, #FFCC70 0%, #C850C0 46%, #4158D0 100%);
+nav h2 span, .footer-contents h2 span {
+    /* background-image: linear-gradient(17deg, #FFCC70 0%, #C850C0 46%, #4158D0 100%); */
+    background: linear-gradient(12deg, #f7e93f 0%, #fb09b4 40%, #7b5cff 86%, #9100F8 100%);
     background-clip: text;
     color: transparent;
 }
@@ -142,7 +142,7 @@ nav div div ul li {
 /* about styles */
 #about {
     width: 75%;
-    margin: 45px auto 120px;
+    margin: 23px auto 120px;
     text-align: center;
 }
 .about-content {
@@ -372,4 +372,52 @@ nav div div ul li {
 }
 .link:last-of-type img {
     padding: 25% 0 0 25% !important;
+}
+
+
+/* footer */
+footer {
+    background: url("/assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 412px;
+}
+.footer-contents {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 93px;
+}
+.footer-links {
+    padding-bottom: 32px;
+}
+
+.footer-contents h2 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.foot-link {
+    align-items: center;
+}
+.foot-link span {
+    font-weight: 500;
+}
+.foot-link img {
+    height: 20px;
+    width: 20px;
+}
+.footer-links .foot-link:nth-of-type(3) img {
+    height: 16px !important;
+}
+.footer-contents p {
+    font-weight: 300;
+    color: #FAFAFA;
+}
+.foot-link span, .footer-contents p {
+    font-size: 1rem;
+    opacity: 0.6;
 }

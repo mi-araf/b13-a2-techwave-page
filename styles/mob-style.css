@@ -42,6 +42,7 @@
         display: block;
     }
 
+    /* banner main */
     .banner {
         height: 430px;
     }
@@ -83,6 +84,7 @@
         font-size: 14px;
     }
 
+    /* about section */
     #about {
         margin-top: 3.2rem;
         width: 95%;
@@ -113,6 +115,7 @@
         font-size: 14px;
     }
 
+    /* techwave */
     .techwave-contents {
         width: 100%;
         padding-top: 40px;
@@ -141,7 +144,7 @@
         transform: translateY(-5px);
     }
 
-
+    /* feature secction */
     #episodes, #host {
         width: 91%;
         margin: 40px auto 60px;
@@ -167,7 +170,7 @@
         padding: 8px 0;
     }
 
-
+    /* host section */
     .host-contents {
         flex-direction: column;
         padding: 24px;
@@ -185,6 +188,26 @@
     }
     .host-links {
         justify-content: center;
+    }
+
+    /* footer */
+    footer {
+        min-height: 100%;
+        background-size: 179% 137%;
+        background-position: 50% -4.8rem;
+    }
+    .footer-contents {
+        padding: 35px 4px;
+    }
+    .footer-links {
+        width: 270px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px 0 28px 0;
+        gap: 16px;
+    }
+    .footer-contents h2 {
+        font-size: 2rem;
     }
 
 }
