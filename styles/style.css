@@ -20,6 +20,8 @@
     font-weight: 600;
     line-height: 15px;
     border: none;
+
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 .btn-subs {
     color: #00FF88;
@@ -29,16 +31,17 @@
     font-size: 16px;
     font-weight: 600;
     margin-left: 8px;
+
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 .btn:hover, .btn-subs:hover {
     cursor: pointer;
     opacity: 0.9;
+    
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.15);
 }
-nav button:hover {
-    cursor: pointer;
-    opacity: 0.9;
-    transform: translateX(-2px);
-}
+
 
 /* titles */
 .about-content h2, #episodes h2, #host h2 {
@@ -58,6 +61,7 @@ nav {
     background: #1A0B2E; 
 }
 nav h2 {
+    cursor: default;
     font-size: 2rem;
     font-weight: bolder;
 }
@@ -124,7 +128,7 @@ nav div div ul li {
     transform: translate(-49%, -108%);
     z-index: 99;
 }
-.banner h6 {
+.new-badge {
     background-color: #00FF88;
     color: #1A0B2E;
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
@@ -135,7 +139,7 @@ nav div div ul li {
     height: 38px;
     padding: 6px 16px;
     top: 13%;
-    left: 54%;
+    left: 54%;  
 }
 
 
@@ -183,6 +187,16 @@ nav div div ul li {
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
+}
+.about-card, .episode-card {    
+    transition: transform 0.25s ease-in-out;    /* INFO: episode card's hover is also here */
+}
+.about-card:hover {
+    transform: scale(1.08);
+}
+.episode-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.5em 0.5em -0.4em rgba(40, 10, 85, 0.393);
 }
 
 
